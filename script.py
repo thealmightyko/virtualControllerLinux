@@ -11,7 +11,7 @@ from evdev import InputDevice, ecodes
 # --- Configuration and Global Variables ---
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 
-parser = argparse.ArgumentParser(description="Generic Wii U Pro Controller Mapping using evdev (Wayland)")
+parser = argparse.ArgumentParser(description="Generic Wii U Pro Controller Mapping using evdev")
 parser.add_argument("--sensitivity", type=float, default=1.0, help="Mouse sensitivity multiplier")
 parser.add_argument("--mouse-device", type=str, required=True, help="Path to the evdev mouse device (e.g. /dev/input/eventX)")
 parser.add_argument("--keyboard-device", type=str, required=True, help="Path to the evdev keyboard device (e.g. /dev/input/eventY)")
